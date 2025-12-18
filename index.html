@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spot the Difference</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="titles">
+          <div class="title">Spot the Difference</div>
+          <div class="subtitle" id="subtitle">Play</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#/play" id="nav-play">Play</a>
+        <a href="#/builder" id="nav-builder">Builder</a>
+        <a href="#/about" id="nav-about">About</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div id="route"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="muted">Offline-first, no dependencies. Progress saved locally.</div>
+    </footer>
+  </div>
+
+  <canvas id="fx" class="fx" aria-hidden="true"></canvas>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
